@@ -12,4 +12,4 @@ For users on MacOS, the Porter project maintains a <a href="https://brew.sh/">Ho
 
 This project follows the same guidelines as the Porter project. 💖 We are actively seeking out new contributors.
 
-<p align="center">Start with our <a href="https://porter.sh/contribute/">New Contributors Guide</a>. Please make sure to read the <a href ="https://github.com/deislabs/porter/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> and <a href="https://github.com/deislabs/porter/blob/main/CONTRIBUTING.md">Contributing Guidelines</a>.
+<p align="center">Start with our <a href="https://porter.sh/contribute/">New Contributors Guide</a>. Please make sure to read the <a href ="https://porter.sh/src/CODE_OF_CONDUCT.md">Code of Conduct</a> and <a href="https://porter.sh/src/CONTRIBUTING.md">Contributing Guidelines</a>.
