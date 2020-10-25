@@ -1,0 +1,23 @@
+# This workflow automatically updates formula on the release of a new version
+name: Update Porter formula in tap
+on:
+  repository_dispatch:
+    types: [release]
+
+jobs:
+  bump-formula-pr:
+    name: Create PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Homebrew bump formula
+        uses: dawidd6/action-homebrew-bump-formula@v3.4.1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          tap: hashicorp/homebrew-tap
+          formula: porter
+          version: ${{github.event.client_payload.version}}
+      - name: Merge pull requests
+        uses: pascalgn/automerge-action@v0.9.0
+        env:
+          GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+          MERGE_LABELS: "${{github.event.client_payload.version}}"
