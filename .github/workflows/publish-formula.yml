@@ -21,3 +21,4 @@ jobs:
         env:
           GITHUB_TOKEN: "${{secrets.HOMEBREW_TOKEN}}"
           MERGE_LABELS: "${{github.event.client_payload.version}}"
+          MERGE_DELETE_BRANCH: true
