@@ -15,7 +15,7 @@ jobs:
           token: ${{secrets.HOMEBREW_TOKEN}}
           tap: "${{github.repository_owner}}/porter"
           formula: porter
-          version: ${{github.event.client_payload.version}}
+          tag: ${{github.event.client_payload.tag}}
       - name: Merge pull requests
         uses: pascalgn/automerge-action@v0.9.0
         env:
