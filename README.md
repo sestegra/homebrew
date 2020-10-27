@@ -4,7 +4,23 @@ For users on MacOS, the Porter project maintains a <a href="https://brew.sh/">Ho
 
 <p align="center">Learn all about Porter at <a href="https://porter.sh">porter.sh</a></p>
 
-🚨 This isn't ready to use yet. We will update this page with the proper commands to run once our tap is complete!
+## Initial setup
+To tap Porter formula repository, execute following command.
+```
+brew tap getporter/porter
+```
+
+## Installing
+To install Porter, execute following command.
+```
+brew install porter
+```
+
+## Updating
+To update Porter, execute following command.
+```
+brew upgrade porter
+```
 
 ---
 
